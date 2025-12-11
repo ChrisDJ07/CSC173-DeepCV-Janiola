@@ -1,4 +1,4 @@
-# [Project Title: e.g., Real-Time Object Detection for Waste Sorting]
+# Deep Learning–Based Visual Recognition and Value Computation of Philippine Coins
 **CSC173 Intelligent Systems Final Project**  
 *Mindanao State University - Iligan Institute of Technology*  
 **Student:** Christian Dave J. Janiola, 2022-0137  
@@ -20,15 +20,21 @@
 - [References](#references)
 
 ## Introduction
+Computer vision has enabled machines to perceive and interpret visual information with increasing accuracy. Tasks such as image classification, object detection, and segmentation are now widely used in industries ranging from manufacturing to finance. This project proposes a deep learning–based system capable of identifying and counting Philippine coins from an image. The system will detect individual coins, classify their denominations, and compute the total monetary value present in the image.
+
+This application is relevant for automated payment systems, coin-sorting machines, kiosk terminals, and assistive technologies for visually impaired individuals. The project is also aligned with the objectives of the “Intelligent Systems” course by providing a hands-on implementation of convolutional neural networks (CNNs) for real-world visual understanding.
+
+
 ### Problem Statement
 Philippine coins come in several denominations with overlapping physical characteristics (e.g., size, color, reflectiveness). Currently, automated recognition systems for Philippine currency are limited. Most existing models are trained on foreign currency datasets, and readily available tools (e.g., pre-trained YOLO detectors) cannot reliably perform coin recognition without re-training
 
 ### Objectives
-- [Objective 1: e.g., Achieve >90% detection accuracy]
-- [Objective 2: Integrate with decision logic]
-- [Objective 3: Deploy on edge device]
-
-![Problem Demo](images/problem_example.gif) [web:41]
+- To gather Philippine‑coin dataset using publicly available sources.
+- To apply transfer learning on pre‑trained CNN or object detection models (e.g.YOLOv8‑n/s) for improved performance despite limited data.
+- To train and validate the model using a complete pipeline including preprocessing, augmentation, hyperparameter tuning, and evaluation.
+- To detect and classify coin denominations from images containing multiple coins.
+- To implement a post‑processing module that counts detected units per denomination and computes the total monetary value.
+- To evaluate model performance using accuracy, confusion matrices, precision/recall, and mAP.
 
 ## Related Work
 - [Paper 1: YOLOv8 for real-time detection [1]]
@@ -37,7 +43,7 @@ Philippine coins come in several denominations with overlapping physical charact
 
 ## Methodology
 ### Dataset
-- Source: [e.g., Custom 5K images + COCO subset]
+- Source: World Coins Dataset (Kaggle)
 - Split: 70/15/15 train/val/test
 - Preprocessing: Augmentation, resizing to 640x640 [web:41]
 
@@ -102,5 +108,5 @@ albumentations
 [2] Deng, J., et al. "ImageNet: A large-scale hierarchical image database," CVPR, 2009. [web:25]
 
 ## GitHub Pages
-View this project site: [https://jjmmontemayor.github.io/CSC173-DeepCV-Montemayor/](https://jjmmontemayor.github.io/CSC173-DeepCV-Montemayor/) [web:32]
+View this project site: [https://github.com/ChrisDJ07/CSC173-DeepCV-Janiola](https://github.com/ChrisDJ07/CSC173-DeepCV-Janiola)
 
