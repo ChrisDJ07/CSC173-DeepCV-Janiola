@@ -11,7 +11,7 @@ Philippine coins come in several denominations with overlapping physical charact
 
 
 ## 3. Objectives
-- To gather Philippine‑coin dataset using publicly available sources.
+- To gather Philippine‑coin dataset manually using a phone camera and spare Philippine peso coins.
 - To apply transfer learning on pre‑trained CNN or object detection models (e.g.YOLOv8‑n/s) for improved performance despite limited data.
 - To train and validate the model using a complete pipeline including preprocessing, augmentation, hyperparameter tuning, and evaluation.
 - To detect and classify coin denominations from images containing multiple coins.
@@ -19,12 +19,13 @@ Philippine coins come in several denominations with overlapping physical charact
 - To evaluate model performance using accuracy, confusion matrices, precision/recall, and mAP.
 
 ## 4. Dataset Plan
-- Source: World Coins Dataset (Kaggle) – with old Philippine coins up to the ₱10 denomination.
+- Source: Manually collected data taking phone pictures with old Philippine coins up to the ₱10 denomination and the new ₱20 coin denomination
 - Classes:
     - Philippine ₱1 coin
     - Philippine ₱5 coin
     - Philippine ₱10 coin
-- Acquisition: Manual download from kaggle World Coins dataset
+    - Philippine ₱20 coin
+- Acquisition: Manual collection from spare coins on hand.
 
 ## 5. Technical Approach
 - Architecture sketch:
