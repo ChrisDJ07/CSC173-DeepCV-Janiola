@@ -1,0 +1,9 @@
+names:
+  0: 10_peso
+  1: 1_peso
+  2: 20_peso
+  3: 5_peso
+path: resources/manual_annotated_COIN_dataset
+test: test/images
+train: train/images
+val: valid/images

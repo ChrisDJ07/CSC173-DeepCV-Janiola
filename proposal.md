@@ -30,7 +30,7 @@ Philippine coins come in several denominations with overlapping physical charact
 ## 5. Technical Approach
 - Architecture sketch:
     - YOLOv8‑n pre-trained on COCO
-    - Fine‑tuning on Kaggle dataset
+    - Fine‑tuning on manually collected dataset
     - Output: bounding box + coin class
 - Model: YOLOv8n
 - Framework: PyTorch
