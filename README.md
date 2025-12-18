@@ -203,7 +203,7 @@ results = model.train(
 ---
 
 **Training Curves**
-![Training Curves](coin_yolo_training\yolov8n_coins2\results.png)
+![Training Curves](images/results.png)
 
 ### Demo
 ![Detection Demo](demo/detection.gif)
@@ -268,8 +268,8 @@ All coin denominations achieved >95% mAP@0.5, indicating robust multi-class disc
 
 This project successfully demonstrated that **transfer learning with YOLOv8 enables rapid development of specialized coin detection systems** for Philippine currency. Key accomplishments:
 
-1. ✅ Created first public Philippine coin detection dataset (263 images, 954 coins).
-2. ✅ Achieved 99.4% mAP@0.5 on test set (+61.8% vs. COCO baseline).
+1. ✅ Created one of the first public Philippine coin detection dataset (263 images, 954 coins).
+2. ✅ Achieved 98.8% mAP@0.5 on test set (+94.3% vs. COCO baseline).
 3. ✅ Deployed real-time inference (435 FPS GPU, 11 FPS CPU).
 4. ✅ Implemented post-processing for coin counting and value computation.
 5. ✅ Comprehensive evaluation with per-class metrics and speed benchmarks.
