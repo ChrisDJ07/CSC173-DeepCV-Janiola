@@ -215,6 +215,9 @@ Watch the full demonstration of real-time Philippine coin detection:
 
 **[📹 Watch Demo Video (CSC173_Janiola_Final.mkv)](demo/CSC173_Janiola_Final.mkv)**
 
+**Alternative youtube (unlisted) Link**
+Demo link: [Final Demo](https://youtu.be/E1Roj6Y0gZk)
+
 
 ## Discussion
 
