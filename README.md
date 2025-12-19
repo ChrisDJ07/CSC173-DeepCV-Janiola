@@ -209,9 +209,12 @@ results = model.train(
 ![Confusion Matrix Normalized](images/confusion_matrix_normalized.png)
 
 
-### Demo
-![Detection Demo](demo/detection.gif)
-[Video: [CSC173_YourLastName_Final.mp4](demo/CSC173_YourLastName_Final.mp4)] [web:41]
+### Demo Video
+
+Watch the full demonstration of real-time Philippine coin detection:
+
+**[📹 Watch Demo Video (CSC173_Janiola_Final.mkv)](demo/CSC173_Janiola_Final.mkv)**
+
 
 ## Discussion
 
