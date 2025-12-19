@@ -36,7 +36,7 @@ This application is relevant for automated payment systems, coin-sorting machine
 Philippine coins come in several denominations with overlapping physical characteristics (e.g., size, color, reflectiveness). Currently, automated recognition systems for Philippine currency are limited. Most existing models are trained on foreign currency datasets, and readily available tools (e.g., pre-trained YOLO detectors) cannot reliably perform coin recognition without re-training
 
 ### Objectives
-- To gather Philippine‑coin dataset using publicly available sources.
+- To gather Philippine‑coin dataset manually using a phone camera and spare Philippine peso coins.
 - To apply transfer learning on pre‑trained CNN or object detection models (e.g.YOLOv8‑n) for improved performance despite limited data.
 - To train and validate the model using a complete pipeline including preprocessing, augmentation, hyperparameter tuning, and evaluation.
 - To detect and classify coin denominations from images containing multiple coins.
@@ -75,7 +75,7 @@ Prior work on currency recognition includes:
 - **Total coin instances:** 954 individual coins
 - **Denominations:** ₱1, ₱5, ₱10, ₱20 (4 classes)
 - **Annotation tool:** Roboflow (bounding box annotations in YOLO format)
-- **Data split:** 70% training (185 images, 667 coins) / 20% validation (53 images, 149 coins) / 10% test (26 images, 101 coins)
+- **Data split:** 70% training (184 images, 667 coins) / 20% validation (53 images, 149 coins) / 10% test (26 images, 101 coins)
 
 #### Class Distribution
 | Denomination | Train | Val | Test | Total | % |
@@ -194,7 +194,7 @@ results = model.train(
 | 5 | 94.2% | 85.1% | 83.3% | 91.4% | 2.355 |
 | 8 | 98.7% | 95.4% | 96.2% | 97.2% | 1.687 |
 | **13** | **99.4%** | **97.9%** | **97.0%** | **98.8%** | **1.482** |
-| 23 | 99.4% | 97.3% | 97.9% | 99.5% | 1.377 |
+| 23 | early stopping
 
 *Total Val Loss = val/box_loss + val/cls_loss + val/dfl_loss
 
@@ -204,6 +204,10 @@ results = model.train(
 
 **Training Curves**
 ![Training Curves](images/results.png)
+
+**Normalized Confusion Matrix**
+![Confusion Matrix Normalized](images/confusion_matrix_normalized.png)
+
 
 ### Demo
 ![Detection Demo](demo/detection.gif)
@@ -283,7 +287,7 @@ This project successfully demonstrated that **transfer learning with YOLOv8 enab
 
 ## Installation
 1. Clone repo: `git clone https://github.com/ChrisDJ07/CSC173-DeepCV-Janiola.git`
-2. Install deps: `pip install -r requirements.txt`   
+2. Install dependencies: `pip install -r requirements.txt`   
     **requirements.txt:**
     ```
     torch>=2.0.0
@@ -320,7 +324,7 @@ Real-time coin detection with counting and value computation:
 - **Roboflow** for annotation tools and dataset management
 - **Ultralytics** for YOLOv8 framework and documentation
 - **Google Colab** for free GPU resources during development
-- **CSC173 instructors** for guidance and project support
+- **Ma'am Jen** for guidance and project support
 
 ## GitHub Pages
 View this project site: [https://github.com/ChrisDJ07/CSC173-DeepCV-Janiola](https://github.com/ChrisDJ07/CSC173-DeepCV-Janiola)
